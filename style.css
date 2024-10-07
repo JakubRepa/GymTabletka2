@@ -66,6 +66,8 @@ a:hover {
 .wpcf7 form label[for="submit-button"] {
     color:white;
     background-color: #1D6EC1;
+    padding: 4px;
+    margin-top: -4px;
 }
 
 /* Add more custom styles as needed */
