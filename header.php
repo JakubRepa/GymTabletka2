@@ -32,25 +32,7 @@
             <div class="flex space-x-2">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/userIcon.png" alt="UserIcon" class="w-auto h-10">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/basketIcon.png" alt="BasketIcon" class="w-auto h-10">
-                <ul>
-                    <?php
-                    $current_url = home_url(add_query_arg(NULL, NULL)); // Získání aktuální URL
-                    pll_the_languages(array(
-                        'hide_if_no_translation' => 0,
-                        'display_names_as' => 'slug',
-                        'raw' => 1, // Získání jazyků jako pole, pro vlastní úpravy
-                    ));
-
-                    $languages = pll_the_languages(array('raw' => 1)); // Získání všech jazyků
-                    foreach ($languages as $language) {
-                        // Pokud existuje překlad, přesměruj na překlad, jinak na stejnou stránku v daném jazyce
-                        $translated_url = pll_get_post(get_queried_object_id(), $language['slug']);
-                        $switch_url = $translated_url ? get_permalink($translated_url) : add_query_arg('lang', $language['slug'], $current_url); 
-                        echo '<li><a href="' . esc_url($switch_url) . '">' . esc_html($language['slug']) . '</a></li>';
-                    }
-                    ?>
-                </ul>
-
+                <ul><?php pll_the_languages(); ?></ul>
             </div>
         </div>
     </div>
