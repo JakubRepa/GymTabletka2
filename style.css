@@ -48,21 +48,5 @@ a:hover {
     font-weight: bold;
 }
 
-.wpcf7 form label[for="your-email"] {
-    font-weight: bold;
-}
-
-.wpcf7 form label[for="your-subject"] {
-    font-weight: bold;
-}
-
-.wpcf7 form label[for="your-message"] {
-    font-weight: bold;
-}
-
-.wpcf7 form label[for="submit-button"] {
-    color:white;
-    background-color: #1D6EC1;
-}
 
 /* Add more custom styles as needed */
