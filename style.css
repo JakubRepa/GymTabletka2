@@ -44,10 +44,10 @@ a:hover {
     text-decoration: underline;
 }
 
-input[type="your-name"]
-{
-    font-weight: bold;
+.wpcf7 form label[for="your-name"] {
+    color: blue;
 }
+
 
 
 /* Add more custom styles as needed */
