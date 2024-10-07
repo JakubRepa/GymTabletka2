@@ -24,7 +24,7 @@ get_header();
                     </div>
                     <div>
                         <div class="-space-y-1">
-                            <p class="text-lg font-bold">FreeEE delivery</p>
+                            <p class="text-lg font-bold">Free delivery</p>
                             <p>on orders over 150€</p>
                         </div>
                     </div>
