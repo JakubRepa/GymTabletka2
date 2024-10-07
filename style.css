@@ -64,10 +64,25 @@ a:hover {
 }
 
 .wpcf7 form label[for="submit-button"] {
-    color:white;
+    color: white; /* Barva textu tlačítka */
+    padding: 10px 20px; /* Vnitřní odsazení */
+    border: none; /* Bez okraje */
     background-color: #1D6EC1;
-    padding: 4px;
-    margin-top: -4px;
+    border-radius: 8px; /* Zaoblení rohů */
+    cursor: pointer; /* Změna kurzoru na ručičku */
+    font-size: 16px; /* Velikost písma */
+}
+
+.wpcf7 form input[type="your-name"],
+.wpcf7 form input[type="your-email"],
+.wpcf7 form input[type="your-subject"],
+.wpcf7 form input[type="your-message"] {
+    border: 2px solid #333; /* Nastavení barvy a tloušťky okraje */
+    padding: 10px; /* Vnitřní odsazení */
+    border-radius: 8px; /* Zaoblení rohů */
+    width: 100%; /* Šířka polí */
+    font-size: 16px; /* Velikost písma */
+    background-color: #f9f9f9; /* Barva pozadí */
 }
 
 /* Add more custom styles as needed */
