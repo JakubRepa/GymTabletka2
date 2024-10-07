@@ -51,19 +51,22 @@ a:hover {
 .wpcf7 form label[for="your-email"] {
     font-weight: bold;
     margin-top:8px;
+    display: block;
 }
 
 .wpcf7 form label[for="your-subject"] {
     font-weight: bold;
     margin-top:8px;
+    display: block;
 }
 
 .wpcf7 form label[for="your-message"] {
     font-weight: bold;
     margin-top:8px;
+    display: block;
 }
 
-.wpcf7 form label[for="submit-button"] {
+.wpcf7 form label[for="submit-button"] input {
     color: white; 
     padding: 10px 20px; 
     border: none;
@@ -73,10 +76,10 @@ a:hover {
     font-size: 16px; 
 }
 
-.wpcf7 form input[type="your-name"],
-.wpcf7 form input[type="your-email"],
-.wpcf7 form input[type="your-subject"],
-.wpcf7 form input[type="your-message"] {
+.wpcf7 form input[name="your-name"],
+.wpcf7 form input[name="your-email"],
+.wpcf7 form input[name="your-subject"],
+.wpcf7 form input[name="your-message"] {
     border: 2px solid #333; /* Nastavení barvy a tloušťky okraje */
     border-radius: 8px; /* Zaoblení rohů */
     width: 100%; /* Šířka polí */
