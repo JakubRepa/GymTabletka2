@@ -50,14 +50,17 @@ a:hover {
 
 .wpcf7 form label[for="your-email"] {
     font-weight: bold;
+    padding-top:8px;
 }
 
 .wpcf7 form label[for="your-subject"] {
     font-weight: bold;
+    padding-top:8px;
 }
 
 .wpcf7 form label[for="your-message"] {
     font-weight: bold;
+    padding-top:8px;
 }
 
 .wpcf7 form label[for="submit-button"] {
