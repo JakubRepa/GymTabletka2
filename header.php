@@ -26,7 +26,8 @@
                     <a href="<?php echo esc_url(home_url('/healthy-foods')); ?>" class="font-bold text-white"><?php the_field('healthy_foods'); ?></a>
                     <a href="<?php echo esc_url(home_url('/sportswear')); ?>" class="font-bold text-white"><?php the_field('sportswear'); ?></a>
                     <a href="<?php echo esc_url(home_url('/blog')); ?>" class="font-bold text-[#F9BF3B]">Blog</a>
-                </div>
+                    </div>
+
             </div>
             <div class="flex space-x-2">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/userIcon.png" alt="UserIcon" class="w-auto h-10">
@@ -36,15 +37,11 @@
         </div>
     </div>
 
-    <div class="pt-20"> <!-- Přidáno pro odsun obsahu dolů, aby se navbar nepřekrýval -->
-        <?php
-        if ( has_nav_menu( 'primary' ) ) :
-            wp_nav_menu( array(
-                'theme_location' => 'primary',
-                'menu_id'        => 'primary-menu',
-            ) );
-        endif;
-        ?>
-    </div>
-    
-    <?php wp_footer(); ?>
+    <?php
+    if ( has_nav_menu( 'primary' ) ) :
+        wp_nav_menu( array(
+            'theme_location' => 'primary',
+            'menu_id'        => 'primary-menu',
+        ) );
+    endif;
+    ?>
