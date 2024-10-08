@@ -7,11 +7,11 @@
 </head>
 <body <?php body_class(); ?>>
 
-    <div class="bg-[#232F3E] text-[#FFFFFF] py-4 fixed w-full top-0 z-50 shadow-md"> <!-- Přidán shadow-md pro vizuální oddělení -->
+    <div class="bg-[#232F3E] text-[#FFFFFF] py-4 fixed top-0 z-50">
         <div class="container flex items-center justify-between max-w-6xl mx-auto">
             <div class="text-4xl font-bold">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LOGOOO</a>
-            </div>  
+            </div>
             <div class="flex flex-col">
                 <div class="relative -mx-8">
                     <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
