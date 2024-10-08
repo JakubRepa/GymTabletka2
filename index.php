@@ -55,88 +55,28 @@ get_header();
                 </div>
             </div>
         </div>
+    <div>
 
-        <div>
-            <div class="flex justify-center pt-24 pb-8">
-                <h2 class="text-3xl font-bold">Our top sellers</h2>
-            </div>
-            <div class="container flex justify-between max-w-6xl mx-auto h-[16rem]">
-                <div class="bg-[#F0F2F5] flex justify-between items-center rounded-lg p-8 w-full mr-4 h-full">
-                    <div class="max-w-[50%]">
-                        <h3 class="text-3xl font-bold">Protein</h3>
-                        <p>Short description of the most popular category, Short description of the most popular category, Short description of the most popular category.</p>
-                    </div>
-                    <div class="flex items-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="h-40">
-                    </div>
-                </div>
-                <div class="w-full">
-                    <div class="bg-[#F0F2F5] justify-between items-center flex rounded-lg h-[7.5rem] p-8 mb-4">
-                        <div class="max-w-[50%]">
-                            <h3 class="text-2xl font-bold">Protein</h3>
-                            <p>Short description of the most popular category</p>
-                        </div>
-                        <div class="flex items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="h-28">
-                        </div>
-                    </div>
-                    <div class="bg-[#F0F2F5] justify-between items-center flex rounded-lg h-[7.5rem] p-8 mt-4">
-                        <div class="max-w-[50%]">
-                            <h3 class="text-2xl font-bold">Protein</h3>
-                            <p>Short description of the most popular category</p>
-                        </div>
-                        <div class="flex items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="h-28">
-                        </div>
-                    </div>
-                </div>          
-            </div>
-        </div>
-
-        <div>
-            <div class="pt-24 pb-8 text-center">
-                <h3 class="text-3xl font-bold">Shop by categories</h3>
-            </div>
-            <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap">
-                <?php 
-                for ($i = 0; $i < 6; $i++) : ?>
-                    <div class="text-center">
-                        <div class="bg-[#F0F2F5] rounded-lg w-44 h-44 flex items-center justify-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="h-24">
-                        </div>
-                        <div class="pt-2">
-                            <p>Category</p>
-                        </div>
-                    </div>
-                <?php endfor; ?>
-            </div>
-        </div>
-
-        <div>
     <div class="pt-24 pb-8 text-center">
-        <h3 class="text-3xl font-bold">Shop by categories</h3>
+        <h3 class="text-3xl font-bold">Our top sellers</h3>
     </div>
     <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap">
         <?php 
-        // Custom WP Query to fetch WooCommerce Products
         $args = array(
-            'post_type' => 'product', // Specify WooCommerce product type
-            'posts_per_page' => 6,    // Number of products to display
-            'orderby' => 'date',      // Order by latest
-            'order' => 'DESC'         // Display in descending order
+            'post_type' => 'product',
+            'posts_per_page' => 4,
+            'orderby' => 'date',
+            'order' => 'DESC'
         );
 
         $loop = new WP_Query($args);
 
-        // Loop through products
         if ($loop->have_posts()) : 
             while ($loop->have_posts()) : $loop->the_post();
-            
-                global $product; // Access the global $product variable to get WooCommerce product data
+                global $product;
                 ?>
                 <div class="text-center">
                     <div class="bg-[#F0F2F5] rounded-lg w-44 h-44 flex items-center justify-center">
-                        <!-- Display Product Thumbnail -->
                         <a href="<?php the_permalink(); ?>" class="product-link">
                             <?php if (has_post_thumbnail()) : ?>
                                 <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="h-24">
@@ -146,24 +86,20 @@ get_header();
                         </a>
                     </div>
                     <div class="pt-2">
-                        <!-- Display Product Title -->
                         <p class="font-bold"><?php the_title(); ?></p>
-                        <!-- Display Product Price -->
                         <span class="text-green-600"><?php echo $product->get_price_html(); ?></span>
                         <br>
-                        <!-- Display a 'Shop Now' Button -->
                         <a href="<?php the_permalink(); ?>" class="mt-2 inline-block bg-blue-600 text-white px-4 py-2 rounded">Shop Now</a>
                     </div>
                 </div>
                 <?php 
             endwhile;
-            wp_reset_postdata(); // Reset the global $post variable
+            wp_reset_postdata();
         else :
             echo '<p>No products found</p>';
         endif;
         ?>
     </div>
-</div>
 
         
 
