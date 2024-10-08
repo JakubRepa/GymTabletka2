@@ -85,7 +85,6 @@ $texts = [
     .carousel-container {
         width: 100%;
         height: 40rem; /* Height for the carousel */
-        margin-top:20px;
     }
 
     .carousel-item {
