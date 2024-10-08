@@ -17,25 +17,25 @@ $texts = [
 ];
 ?>
 
-<div class="relative w-full overflow-hidden carousel-container mt-20">
-    <div class="flex transition-transform duration-500 carousel" id="carousel">
-        <?php foreach ($images as $index => $image): ?>
-            <div class="relative flex items-center w-full carousel-item h-96">
-                <img src="<?php echo esc_url($image); ?>" alt="Carousel image" class="object-cover w-full h-full" />
-                <div class="absolute inset-x-0 flex justify-center">
-                    <div class="container max-w-6xl">
-                        <span class="text-3xl font-bold text-black"><?php echo esc_html($texts[$index]); ?></span>
+    <div class="relative w-full overflow-hidden carousel-container mt-16"> <!-- Použijte margin-top místo padding-top -->
+        <div class="flex transition-transform duration-500 carousel" id="carousel">
+            <?php foreach ($images as $index => $image): ?>
+                <div class="relative flex items-center w-full carousel-item h-96">
+                    <img src="<?php echo esc_url($image); ?>" alt="Carousel image" class="object-cover w-full h-full" />
+                    <div class="absolute inset-x-0 flex justify-center">
+                        <div class="container max-w-6xl">
+                            <span class="text-3xl font-bold text-black"><?php echo esc_html($texts[$index]); ?></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
+        <div class="absolute flex transform -translate-x-1/2 bottom-4 left-1/2">
+            <?php foreach ($images as $index => $image): ?>
+                <button class="w-5 h-5 mx-2 rounded-full carousel-button" data-index="<?php echo esc_attr($index); ?>"></button>
+            <?php endforeach; ?>
+        </div>
     </div>
-    <div class="absolute flex transform -translate-x-1/2 bottom-4 left-1/2">
-        <?php foreach ($images as $index => $image): ?>
-            <button class="w-5 h-5 mx-2 rounded-full carousel-button" data-index="<?php echo esc_attr($index); ?>"></button>
-        <?php endforeach; ?>
-    </div>
-</div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
