@@ -74,6 +74,8 @@ a:hover {
     border-radius: 8px; 
     cursor: pointer; 
     font-size: 16px; 
+    display: flex;
+    justify-items: center;
 }
 
 .wpcf7 form input[name="your-name"],
@@ -83,8 +85,7 @@ a:hover {
     border-radius: 8px; /* Zaoblení rohů */
     width: 100%; /* Šířka polí */
     font-weight:normal;
-    padding: 4px 0 4px 0;
-    margin-left: 4px;
+    padding: 4px 0 4px 4px;
 }
 
 
