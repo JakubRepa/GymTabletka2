@@ -7,8 +7,8 @@
 </head>
 <body <?php body_class(); ?>>
 
-    <div class="bg-[#232F3E] text-[#FFFFFF] py-4 relative">
-        <div class="container flex items-center justify-between max-w-6xl mx-auto fixed">
+    <div class="bg-[#232F3E] text-[#FFFFFF] py-4 fixed w-full top-0 z-50">
+        <div class="container flex items-center justify-between max-w-6xl mx-auto">
             <div class="text-4xl font-bold">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LOGOOO</a>
             </div>
@@ -26,8 +26,7 @@
                     <a href="<?php echo esc_url(home_url('/healthy-foods')); ?>" class="font-bold text-white"><?php the_field('healthy_foods'); ?></a>
                     <a href="<?php echo esc_url(home_url('/sportswear')); ?>" class="font-bold text-white"><?php the_field('sportswear'); ?></a>
                     <a href="<?php echo esc_url(home_url('/blog')); ?>" class="font-bold text-[#F9BF3B]">Blog</a>
-                    </div>
-
+                </div>
             </div>
             <div class="flex space-x-2">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/userIcon.png" alt="UserIcon" class="w-auto h-10">
@@ -37,11 +36,15 @@
         </div>
     </div>
 
-    <?php
-    if ( has_nav_menu( 'primary' ) ) :
-        wp_nav_menu( array(
-            'theme_location' => 'primary',
-            'menu_id'        => 'primary-menu',
-        ) );
-    endif;
-    ?>
+    <div class="pt-20"> <!-- Přidáno pro odsun obsahu dolů, aby se navbar nepřekrýval -->
+        <?php
+        if ( has_nav_menu( 'primary' ) ) :
+            wp_nav_menu( array(
+                'theme_location' => 'primary',
+                'menu_id'        => 'primary-menu',
+            ) );
+        endif;
+        ?>
+    </div>
+    
+    <?php wp_footer(); ?>
