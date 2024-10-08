@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-    <div class="bg-[#232F3E] text-[#FFFFFF] py-4 fixed">
+    <div class="bg-[#232F3E] text-[#FFFFFF] py-4 sticky">
         <div class="container flex items-center justify-between max-w-6xl mx-auto">
             <div class="text-4xl font-bold">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LOGOOO</a>
