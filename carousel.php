@@ -39,37 +39,46 @@ $texts = [
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-    const carousel = document.getElementById('carousel');
-    const buttons = document.querySelectorAll('.carousel-button');
-    let currentIndex = 0;
+        const carousel = document.getElementById('carousel');
+        const buttons = document.querySelectorAll('.carousel-button');
+        let currentIndex = 0;
+        let autoScrollInterval;
 
-    function updateCarousel(index) {
-        carousel.style.transform = `translateX(-${index * 100}%)`;
-        buttons.forEach((button, i) => {
-            button.classList.toggle('bg-gray-800', i === index);
-            button.classList.toggle('bg-gray-400', i !== index);
-        });
-        currentIndex = index;
-    }
+        function updateCarousel(index) {
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+            buttons.forEach((button, i) => {
+                button.classList.toggle('bg-gray-800', i === index);
+                button.classList.toggle('bg-gray-400', i !== index);
+            });
+            currentIndex = index;
+        }
 
-    // Nastavit počáteční aktivní tečku při načtení stránky
-    updateCarousel(0);
+        // Function to start auto-scrolling
+        function startAutoScroll() {
+            autoScrollInterval = setInterval(() => {
+                const nextIndex = (currentIndex + 1) % buttons.length;
+                updateCarousel(nextIndex);
+            }, 5000); // 5 seconds
+        }
 
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            const index = parseInt(button.getAttribute('data-index'), 10);
-            updateCarousel(index);
+        // Stop auto-scrolling
+        function stopAutoScroll() {
+            clearInterval(autoScrollInterval);
+        }
+
+        // Set the initial active dot and start auto-scrolling
+        updateCarousel(0);
+        startAutoScroll();
+
+        // Stop auto-scrolling when a dot is clicked
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const index = parseInt(button.getAttribute('data-index'), 10);
+                updateCarousel(index);
+                stopAutoScroll(); // Stop auto-scrolling after clicking a dot
+            });
         });
     });
-
-    // Optional: Automatické posouvání
-    setInterval(() => {
-        const nextIndex = (currentIndex + 1) % buttons.length;
-        updateCarousel(nextIndex);
-    }, 5000); // Změna z 3000ms na 5000ms (5 sekund)
-});
-
-
 </script>
 
 <style>
