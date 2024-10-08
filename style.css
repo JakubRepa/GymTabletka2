@@ -22,11 +22,9 @@ Tags:
 /* Add your custom styles below */
 
 /* Example custom style */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+html{
+    margin-top: 0px !important;
+}
   
 
 body {
