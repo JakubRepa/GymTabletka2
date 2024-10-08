@@ -84,7 +84,7 @@ $texts = [
 <style>
     .carousel-container {
         width: 100%;
-        height: 40rem; /* Height for the carousel */
+        height: 45rem; /* Height for the carousel */
         padding-top:20px;
     }
 
