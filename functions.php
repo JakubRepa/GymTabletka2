@@ -33,3 +33,10 @@ function disable_gutenberg_for_home_page( $use_block_editor, $post_type ) {
     return $use_block_editor;
 }
 add_filter( 'use_block_editor_for_post_type', 'disable_gutenberg_for_home_page', 10, 2 );
+
+function add_woocommerce_support()
+{
+   add_theme_support('woocommerce');
+}
+
+add_action('after_setup_theme', 'add_woocommerce_support');
