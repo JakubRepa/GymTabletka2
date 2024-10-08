@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-    <div class="bg-[#232F3E] text-[#FFFFFF] py-4 w-full fixed top-0 z-50">
+    <div class="bg-[#232F3E] text-[#FFFFFF] py-4 fixedPosition">
         <div class="container flex items-center justify-between max-w-6xl mx-auto">
             <div class="text-4xl font-bold">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LOGOOO</a>
@@ -36,6 +36,16 @@
             </div>
         </div>
     </div>
+    <style>
+        .fixedPosition {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Dostačující hodnota, aby byl navbar nad carousel */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lehce zvýrazní hranici */
+        }
+    </style>
 
     <?php
     if ( has_nav_menu( 'primary' ) ) :

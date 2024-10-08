@@ -17,7 +17,7 @@ $texts = [
 ];
 ?>
 
-<div class="relative w-full overflow-hidden carousel-container z-0">
+<div class="relative w-full overflow-hidden carousel-container">
     <div class="flex transition-transform duration-500 carousel" id="carousel">
         <?php foreach ($images as $index => $image): ?>
             <div class="relative flex items-center w-full carousel-item h-96">
@@ -84,13 +84,15 @@ $texts = [
 <style>
     .carousel-container {
         width: 100%;
-        height: 40rem; /* Height for the carousel */
+        height: 50rem; /* Height for the carousel */
+        padding-top:30px;
     }
 
     .carousel-item {
         min-width: 100%;
-        height: 40rem; /* Height for each carousel item */
+        height: 50rem; /* Height for each carousel item */
         position: relative; /* Required for absolute positioning of text */
+        margin-top:30px;
     }
 
     .carousel-button.bg-gray-800 {
