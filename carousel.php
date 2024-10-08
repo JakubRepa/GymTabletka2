@@ -85,14 +85,14 @@ $texts = [
     .carousel-container {
         width: 100%;
         height: 45rem; /* Height for the carousel */
-        padding-top:35px;
+        padding-top:30px;
     }
 
     .carousel-item {
         min-width: 100%;
         height: 45rem; /* Height for each carousel item */
         position: relative; /* Required for absolute positioning of text */
-        margin-top:35px;
+        margin-top:30px;
     }
 
     .carousel-button.bg-gray-800 {
