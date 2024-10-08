@@ -1,23 +1,23 @@
 <?php
 
 $images = [
-    get_template_directory_uri() . '/images/img1.JPG',
-    get_template_directory_uri() . '/images/img2.JPG',
-    get_template_directory_uri() . '/images/img3.JPG',
-    get_template_directory_uri() . '/images/img4.JPG',
-    get_template_directory_uri() . '/images/img5.JPG'
+    get_template_directory_uri() . '/images/corousel1.jpg',
+    get_template_directory_uri() . '/images/corousel2.jpg',
+    get_template_directory_uri() . '/images/corousel3.jpg',
+    get_template_directory_uri() . '/images/corousel4.jpg',
+    get_template_directory_uri() . '/images/corousel5.jpg'
 ];
 
 $texts = [
     'Vítek',
-    'Vítek',
-    'Vítek',
-    'Vítek',
-    'Vítek'
+    'Černoch',
+    'Brčko',
+    'Nohy',
+    'Předávkování se'
 ];
 ?>
 
-<div class="relative w-full overflow-hidden carousel-container">
+<div class="relative w-full overflow-hidden carousel-container z-0">
     <div class="flex transition-transform duration-500 carousel" id="carousel">
         <?php foreach ($images as $index => $image): ?>
             <div class="relative flex items-center w-full carousel-item h-96">
@@ -42,6 +42,7 @@ $texts = [
         const carousel = document.getElementById('carousel');
         const buttons = document.querySelectorAll('.carousel-button');
         let currentIndex = 0;
+        let autoScrollInterval;
 
         function updateCarousel(index) {
             carousel.style.transform = `translateX(-${index * 100}%)`;
@@ -52,18 +53,31 @@ $texts = [
             currentIndex = index;
         }
 
+        // Function to start auto-scrolling
+        function startAutoScroll() {
+            autoScrollInterval = setInterval(() => {
+                const nextIndex = (currentIndex + 1) % buttons.length;
+                updateCarousel(nextIndex);
+            }, 5000); // 5 seconds
+        }
+
+        // Stop auto-scrolling
+        function stopAutoScroll() {
+            clearInterval(autoScrollInterval);
+        }
+
+        // Set the initial active dot and start auto-scrolling
+        updateCarousel(0);
+        startAutoScroll();
+
+        // Stop auto-scrolling when a dot is clicked
         buttons.forEach(button => {
             button.addEventListener('click', () => {
                 const index = parseInt(button.getAttribute('data-index'), 10);
                 updateCarousel(index);
+                stopAutoScroll(); // Stop auto-scrolling after clicking a dot
             });
         });
-
-        // Optional: Automatic sliding
-        setInterval(() => {
-            const nextIndex = (currentIndex + 1) % buttons.length;
-            updateCarousel(nextIndex);
-        }, 3000); // Adjust time as needed
     });
 </script>
 

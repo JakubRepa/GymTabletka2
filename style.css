@@ -23,8 +23,9 @@ Tags:
 
 /* Example custom style */
 html{
-    margin: 0;
+    margin-top: 0px !important;
 }
+  
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -74,6 +75,8 @@ a:hover {
     border-radius: 8px; 
     cursor: pointer; 
     font-size: 16px; 
+    display: flex;
+    justify-items: center;
 }
 
 .wpcf7 form input[name="your-name"],
@@ -82,7 +85,8 @@ a:hover {
 .wpcf7 form textarea[name="your-message"] {
     border-radius: 8px; /* Zaoblení rohů */
     width: 100%; /* Šířka polí */
-    font-size: 16px; /* Velikost písma */
+    font-weight:normal;
+    padding: 4px 0 4px 4px;
 }
 
 
