@@ -10,10 +10,10 @@ $images = [
 
 $texts = [
     'Vítek',
-    'Vítek',
-    'Vítek',
-    'Vítek',
-    'Vítek'
+    'Černoch',
+    'Brčko',
+    'Nohy',
+    'Předávkování se'
 ];
 ?>
 
@@ -66,8 +66,9 @@ $texts = [
     setInterval(() => {
         const nextIndex = (currentIndex + 1) % buttons.length;
         updateCarousel(nextIndex);
-    }, 3000); // Přizpůsob si čas podle potřeby
+    }, 5000); // Změna z 3000ms na 5000ms (5 sekund)
 });
+
 
 </script>
 
