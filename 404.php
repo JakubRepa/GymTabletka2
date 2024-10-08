@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+ /*
+Template Name: 404 Page
+*/
+?>
 
 <main>
     <div class="h-[75vh] justify-center items-center flex flex-col">
