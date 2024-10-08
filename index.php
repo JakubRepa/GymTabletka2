@@ -24,8 +24,8 @@ get_header();
                     </div>
                     <div>
                         <div class="-space-y-1">
-                            <p class="text-lg font-bold">Free delivery</p>
-                            <p>on orders over 150€</p>
+                            <p class="text-lg font-bold"><?php the_field('gurantee_one'); ?></p>
+                            <p><?php the_field('subtext_one'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -37,8 +37,8 @@ get_header();
                     </div>
                     <div>
                         <div class="-space-y-1">
-                            <p class="text-lg font-bold">Get 10% Off</p>
-                            <p>for registration</p>
+                            <p class="text-lg font-bold"><?php the_field('gurantee_two'); ?></p>
+                            <p><?php the_field('subtext_two'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -48,8 +48,8 @@ get_header();
                     </div>
                     <div>
                         <div class="-space-y-1">
-                            <p class="text-lg font-bold">14-day money back</p>
-                            <p>guarantee on all clothing</p>
+                            <p class="text-lg font-bold"><?php the_field('gurantee_three'); ?></p>
+                            <p><?php the_field('subtext_three'); ?></p>
                         </div>
                     </div>
                 </div>
