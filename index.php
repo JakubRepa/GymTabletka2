@@ -152,8 +152,10 @@ get_header();
                 <?php endfor; ?>
             </div>
         </div>
-        <div class="flex flex-col items-center justify-center w-full py-16">
-            <?php echo do_shortcode('[contact-form-7 id="8702c0a" title="Contact form 1"]'); ?>
+        <div class="py-24">
+            <div class="flex flex-col items-center justify-center w-full">
+                <?php echo do_shortcode('[contact-form-7 id="8702c0a" title="Contact form 1"]'); ?>
+            </div>
         </div>
     </div>
 </main>
