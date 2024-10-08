@@ -89,7 +89,7 @@ get_header();
                         <p class="font-bold"><?php the_title(); ?></p>
                         <span class="text-green-600"><?php echo $product->get_price_html(); ?></span>
                         <br>
-                        <a href="<?php the_permalink(); ?>" class="text-white py-2 bg-[#1D6EC1] rounded-lg px-12 py-2">Shop Now</a>
+                        <a href="<?php the_permalink(); ?>" class="text-white mt-2 bg-[#1D6EC1] rounded-lg px-12 py-2 font-bold ">Shop Now</a>
                     </div>
                 </div>
                 <?php 
