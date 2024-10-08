@@ -88,8 +88,6 @@ get_header();
                     <div class="pt-2">
                         <p class="font-bold"><?php the_title(); ?></p>
                         <span class="text-green-600"><?php echo $product->get_price_html(); ?></span>
-                        <br>
-                        <a href="<?php the_permalink(); ?>" class="mt-2 inline-block bg-blue-600 text-white px-4 py-2 rounded">Shop Now</a>
                     </div>
                 </div>
                 <?php 
