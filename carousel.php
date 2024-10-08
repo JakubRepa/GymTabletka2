@@ -94,7 +94,6 @@ $texts = [
         height: 50rem; /* Height for each carousel item */
         position: relative; /* Required for absolute positioning of text */
         margin-top:40px;
-        padding-top:40px;
     }
 
     .carousel-button.bg-gray-800 {
