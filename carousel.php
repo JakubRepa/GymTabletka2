@@ -90,7 +90,7 @@ $texts = [
 
     .carousel-item {
         min-width: 100%;
-        height: 40rem; /* Height for each carousel item */
+        height: 45rem; /* Height for each carousel item */
         position: relative; /* Required for absolute positioning of text */
     }
 
