@@ -1,11 +1,11 @@
 <?php
 
 $images = [
-    get_template_directory_uri() . '/images/img1.JPG',
-    get_template_directory_uri() . '/images/img2.JPG',
-    get_template_directory_uri() . '/images/img3.JPG',
-    get_template_directory_uri() . '/images/img4.JPG',
-    get_template_directory_uri() . '/images/img5.JPG'
+    get_template_directory_uri() . '/images/corousel1.jpg',
+    get_template_directory_uri() . '/images/corousel2.jpg',
+    get_template_directory_uri() . '/images/corousel3.jpg',
+    get_template_directory_uri() . '/images/corousel4.jpg',
+    get_template_directory_uri() . '/images/corousel5.jpg'
 ];
 
 $texts = [
