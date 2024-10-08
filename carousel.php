@@ -17,7 +17,7 @@ $texts = [
 ];
 ?>
 
-<div class="relative w-full overflow-hidden carousel-container z-0">
+<div class="w-full overflow-hidden carousel-container">
     <div class="flex transition-transform duration-500 carousel" id="carousel">
         <?php foreach ($images as $index => $image): ?>
             <div class="relative flex items-center w-full carousel-item h-96">
