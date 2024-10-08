@@ -39,32 +39,36 @@ $texts = [
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const carousel = document.getElementById('carousel');
-        const buttons = document.querySelectorAll('.carousel-button');
-        let currentIndex = 0;
+    const carousel = document.getElementById('carousel');
+    const buttons = document.querySelectorAll('.carousel-button');
+    let currentIndex = 0;
 
-        function updateCarousel(index) {
-            carousel.style.transform = `translateX(-${index * 100}%)`;
-            buttons.forEach((button, i) => {
-                button.classList.toggle('bg-gray-800', i === index);
-                button.classList.toggle('bg-gray-400', i !== index);
-            });
-            currentIndex = index;
-        }
-
-        buttons.forEach(button => {
-            button.addEventListener('click', () => {
-                const index = parseInt(button.getAttribute('data-index'), 10);
-                updateCarousel(index);
-            });
+    function updateCarousel(index) {
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+        buttons.forEach((button, i) => {
+            button.classList.toggle('bg-gray-800', i === index);
+            button.classList.toggle('bg-gray-400', i !== index);
         });
+        currentIndex = index;
+    }
 
-        // Optional: Automatic sliding
-        setInterval(() => {
-            const nextIndex = (currentIndex + 1) % buttons.length;
-            updateCarousel(nextIndex);
-        }, 3000); // Adjust time as needed
+    // Nastavit počáteční aktivní tečku při načtení stránky
+    updateCarousel(0);
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const index = parseInt(button.getAttribute('data-index'), 10);
+            updateCarousel(index);
+        });
     });
+
+    // Optional: Automatické posouvání
+    setInterval(() => {
+        const nextIndex = (currentIndex + 1) % buttons.length;
+        updateCarousel(nextIndex);
+    }, 3000); // Přizpůsob si čas podle potřeby
+});
+
 </script>
 
 <style>
