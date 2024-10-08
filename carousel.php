@@ -84,13 +84,13 @@ $texts = [
 <style>
     .carousel-container {
         width: 100%;
-        height: 47rem; /* Height for the carousel */
-        padding-top:40px;
+        height: 45rem; /* Height for the carousel */
+        padding-top:35px;
     }
 
     .carousel-item {
         min-width: 100%;
-        height: 47rem; /* Height for each carousel item */
+        height: 45rem; /* Height for each carousel item */
         position: relative; /* Required for absolute positioning of text */
         margin-top:35px;
     }
