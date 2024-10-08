@@ -58,11 +58,9 @@ get_header();
     <div>
 
     <div class="pt-24 pb-8 text-center">
-    <h3 class="text-3xl font-bold">Our Top Sellers</h3>
-</div>
-
-<div class="container mx-auto max-w-6xl px-4">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <h3 class="text-3xl font-bold">Our top sellers</h3>
+    </div>
+    <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap">
         <?php 
         $args = array(
             'post_type' => 'product',
@@ -77,24 +75,19 @@ get_header();
             while ($loop->have_posts()) : $loop->the_post();
                 global $product;
                 ?>
-                <div class="bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 text-center p-4">
-                    <div class="bg-[#F0F2F5] rounded-lg w-full h-44 flex items-center justify-center mb-4">
+                <div class="text-center">
+                    <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center">
                         <a href="<?php the_permalink(); ?>" class="product-link">
                             <?php if (has_post_thumbnail()) : ?>
-                                <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="max-h-36 mx-auto">
+                                <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="w-auto">
                             <?php else: ?>
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/placeholder.png" alt="No Image" class="h-24">
                             <?php endif; ?>
                         </a>
                     </div>
                     <div class="pt-2">
-                        <!-- Display Product Title -->
-                        <p class="font-bold text-lg"><?php the_title(); ?></p>
-                        <!-- Display Product Price -->
-                        <span class="text-green-600 text-base"><?php echo $product->get_price_html(); ?></span>
-                        <br>
-                        <!-- Display a 'Shop Now' Button -->
-                        <a href="<?php the_permalink(); ?>" class="mt-2 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-500">Shop Now</a>
+                        <p class="font-bold"><?php the_title(); ?></p>
+                        <span class="text-green-600"><?php echo $product->get_price_html(); ?></span>
                     </div>
                 </div>
                 <?php 
@@ -105,8 +98,6 @@ get_header();
         endif;
         ?>
     </div>
-</div>
-
 
         
 
