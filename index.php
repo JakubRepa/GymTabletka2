@@ -57,7 +57,7 @@ get_header();
         </div>
     <div>
 
-    <div class="my-16">
+    <div class="pt-16 pb-16">
         <div class="pb-8 text-center">
             <h3 class="text-3xl font-bold">Our top sellers</h3>
         </div>
