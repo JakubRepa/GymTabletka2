@@ -113,7 +113,7 @@ get_header();
                         <div class="text-center pb-8">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="NoImage" class="rounded-full h-24 w-24 mx-auto">
                         </div>
-                        <div class="text-center">
+                        <div class="text-center max-w-3xl">
                             <p>Short description of the most popular category, Short description of the most popular category, Short description of the most popular category.</p>
                         </div>
                         <div class="text-center pt-8">
