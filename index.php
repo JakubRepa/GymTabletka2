@@ -60,7 +60,7 @@ get_header();
     <div class="pt-24 pb-8 text-center">
         <h3 class="text-3xl font-bold">Our top sellers</h3>
     </div>
-    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-rows-1 gap-4 max-w-6xl mx-auto" style="padding-bottom: 6.5rem;">
+    <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap" style="padding-bottom: 6.5rem;">
     <?php 
         $args = array(
             'post_type' => 'product',
@@ -76,7 +76,7 @@ get_header();
                 global $product;
                 ?>
                 <div class="text-center">
-                    <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center mx-auto">
+                    <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center">
                         <a href="<?php the_permalink(); ?>" class="product-link">
                             <?php if (has_post_thumbnail()) : ?>
                                 <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="w-auto">
@@ -96,9 +96,8 @@ get_header();
         else :
             echo '<p>No products found</p>';
         endif;
-    ?>
-</div>
-
+        ?>
+    </div>
 
         <div class="bg-[#F0F2F5] py-24">
             <div class="container flex justify-between max-w-6xl mx-auto">
@@ -110,7 +109,7 @@ get_header();
             <div class="container flex justify-between max-w-7xl space-x-4 mx-auto pt-12">
                 <?php 
                 for ($i = 0; $i < 3; $i++) : ?>
-                    <div class="w-full">
+                    <div class="w-full w-[5rem]">
                         <div class="text-center pb-8">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="NoImage" class="rounded-full h-24 w-24 mx-auto">
                         </div>
