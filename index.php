@@ -61,47 +61,45 @@ get_header();
         <h3 class="text-3xl font-bold">Our top sellers</h3>
     </div>
     <div class="container mx-auto max-w-6xl" style="padding-bottom: 6.5rem;">
-    <!-- Grid layout that adapts based on screen size -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <?php 
-            $args = array(
-                'post_type' => 'product',
-                'posts_per_page' => 4,
-                'orderby' => 'date',
-                'order' => 'DESC'
-            );
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <?php 
+                $args = array(
+                    'post_type' => 'product',
+                    'posts_per_page' => 4,
+                    'orderby' => 'date',
+                    'order' => 'DESC'
+                );
 
-            $loop = new WP_Query($args);
+                $loop = new WP_Query($args);
 
-            if ($loop->have_posts()) : 
-                while ($loop->have_posts()) : $loop->the_post();
-                    global $product;
-                    ?>
-                    <div class="flex flex-col items-center text-center">
-                        <div class="bg-[#F0F2F5] w-full h-44 flex items-center justify-center">
-                            <a href="<?php the_permalink(); ?>" class="product-link">
-                                <?php if (has_post_thumbnail()) : ?>
-                                    <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="w-auto h-auto max-h-full">
-                                <?php else: ?>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/placeholder.png" alt="No Image" class="h-24">
-                                <?php endif; ?>
-                            </a>
+                if ($loop->have_posts()) : 
+                    while ($loop->have_posts()) : $loop->the_post();
+                        global $product;
+                        ?>
+                        <div class="text-center">
+                            <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center mx-auto">
+                                <a href="<?php the_permalink(); ?>" class="product-link">
+                                    <?php if (has_post_thumbnail()) : ?>
+                                        <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="w-auto">
+                                    <?php else: ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/placeholder.png" alt="No Image" class="h-24">
+                                    <?php endif; ?>
+                                </a>
+                            </div>
+                            <div class="pt-2">
+                                <p class="font-bold"><?php the_title(); ?></p>
+                                <span class="text-green-600"><?php echo $product->get_price_html(); ?></span>
+                            </div>
                         </div>
-                        <div class="pt-2">
-                            <p class="font-bold"><?php the_title(); ?></p>
-                            <span class="text-green-600"><?php echo $product->get_price_html(); ?></span>
-                        </div>
-                    </div>
-                    <?php 
-                endwhile;
-                wp_reset_postdata();
-            else :
-                echo '<p>No products found</p>';
-            endif;
-        ?>
+                        <?php 
+                    endwhile;
+                    wp_reset_postdata();
+                else :
+                    echo '<p>No products found</p>';
+                endif;
+            ?>
+        </div>
     </div>
-</div>
-
 
 
 
