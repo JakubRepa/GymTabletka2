@@ -14,6 +14,14 @@ Template Name: Footer
 */
 ?>
 
+<?php
+$loop= new WP_Query(array(
+    'post_type' => 'footer',
+    'posts_per_page' => 1
+));
+while($loop->have_posts()) : $loop->the_post();
+?>
+
 <footer class="bg-[#232F3E] pt-8">
     <div class="container flex justify-between max-w-6xl mx-auto">
         <div class="flex flex-col space-y-1 text-[#bdc1c5]">
@@ -104,3 +112,10 @@ Template Name: Footer
         </div>
     </div>
 </footer>
+
+<?php endwhile; ?>
+<?php wp_reset_postdata(); ?>
+
+<?php wp_footer(); ?>
+</body>
+</html>
