@@ -60,8 +60,8 @@ get_header();
     <div class="pt-24 pb-8 text-center">
         <h3 class="text-3xl font-bold">Our top sellers</h3>
     </div>
-    <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap">
-        <?php 
+    <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap" style="padding-bottom: 6rem;">
+    <?php 
         $args = array(
             'post_type' => 'product',
             'posts_per_page' => 4,
@@ -99,7 +99,7 @@ get_header();
         ?>
     </div>
 
-        <div class="bg-[#F0F2F5] py-24 mt-24">
+        <div class="bg-[#F0F2F5] py-24">
             <div class="container flex justify-between max-w-6xl mx-auto">
                 <div class="text-center w-full">
                     <h3 class="text-3xl font-bold pb-8">Don’t take our word for it</h3>
