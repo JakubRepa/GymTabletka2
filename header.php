@@ -26,6 +26,8 @@
                     <a href="<?php echo esc_url(home_url('/healthy-foods')); ?>" class="font-bold text-white"><?php the_field('healthy_foods'); ?></a>
                     <a href="<?php echo esc_url(home_url('/sportswear')); ?>" class="font-bold text-white"><?php the_field('sportswear'); ?></a>
                     <a href="<?php echo esc_url(home_url('/blog')); ?>" class="font-bold text-[#F9BF3B]">Blog</a>
+                    <a href="<?php echo esc_url(home_url('/cart')); ?>" class="font-bold text-[#F9BF3B]">Cart</a>
+
                     </div>
 
             </div>
