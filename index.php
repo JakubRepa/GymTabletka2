@@ -60,7 +60,7 @@ get_header();
     <div class="pt-24 pb-8 text-center">
         <h3 class="text-3xl font-bold">Our top sellers</h3>
     </div>
-    <div class="container" style="padding-bottom: 6.5rem;">
+    <div class="container mx-auto" style="padding-bottom: 6.5rem;">
         <div class="flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap">
             <?php 
             $args = array(
