@@ -109,7 +109,7 @@ get_header();
             <div class="container flex justify-between max-w-7xl space-x-4 mx-auto pt-12">
                 <?php 
                 for ($i = 0; $i < 3; $i++) : ?>
-                    <div class="w-full w-[5rem]">
+                    <div class="w-full">
                         <div class="text-center pb-8">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="NoImage" class="rounded-full h-24 w-24 mx-auto">
                         </div>
