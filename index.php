@@ -98,25 +98,6 @@ get_header();
         endif;
         ?>
     </div>
-
-        
-
-        <div class="bg-[#F0F2F5] flex justify-center py-4 mt-12">
-            <button class="bg-white rounded-lg px-12 py-2">View All</button>
-        </div>
-
-        <div>
-            <div class="container flex justify-between max-w-6xl mx-auto pt-24 pb-8">
-                <div class="max-w-[50%]">
-                    <h3 class="text-3xl font-bold">What makes our Whey Protein so special?</h3>
-                    <p>Short description of the most popular category, Short description of the most popular category, Short description of the most popular category.</p>
-                </div>
-                <div class="flex items-center">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="h-40">
-                </div>
-            </div>
-        </div>
-
         <div class="bg-[#F0F2F5] py-24">
             <div class="container flex justify-between max-w-6xl mx-auto">
                 <div class="text-center w-full">
