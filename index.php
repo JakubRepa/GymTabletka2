@@ -60,7 +60,7 @@ get_header();
     <div class="pt-24 pb-8 text-center">
         <h3 class="text-3xl font-bold">Our top sellers</h3>
     </div>
-    <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap" style="padding-bottom: 6.5rem;">
+    <div class="container flex flex-wrap justify-between max-w-6xl mx-auto space-y-4 md:space-y-0 md:space-x-4" style="padding-bottom: 6.5rem;">
     <?php 
         $args = array(
             'post_type' => 'product',
@@ -75,8 +75,8 @@ get_header();
             while ($loop->have_posts()) : $loop->the_post();
                 global $product;
                 ?>
-                <div class="text-center">
-                    <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center">
+                <div class="w-full sm:w-full md:w-1/2 lg:w-1/4 text-center">
+                    <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center mx-auto">
                         <a href="<?php the_permalink(); ?>" class="product-link">
                             <?php if (has_post_thumbnail()) : ?>
                                 <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="w-auto">
@@ -96,8 +96,9 @@ get_header();
         else :
             echo '<p>No products found</p>';
         endif;
-        ?>
-    </div>
+    ?>
+</div>
+
 
         <div class="bg-[#F0F2F5] py-24">
             <div class="container flex justify-between max-w-6xl mx-auto">
