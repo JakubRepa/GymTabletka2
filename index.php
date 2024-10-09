@@ -60,7 +60,7 @@ get_header();
     <div class="pt-24 pb-8 text-center">
         <h3 class="text-3xl font-bold">Our top sellers</h3>
     </div>
-    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto" style="padding-bottom: 6.5rem;">
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-rows-1 gap-4 max-w-6xl mx-auto" style="padding-bottom: 6.5rem;">
     <?php 
         $args = array(
             'post_type' => 'product',
