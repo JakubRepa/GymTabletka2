@@ -26,14 +26,14 @@
                     <a href="<?php echo esc_url(home_url('/healthy-foods')); ?>" class="font-bold text-white"><?php the_field('healthy_foods'); ?></a>
                     <a href="<?php echo esc_url(home_url('/sportswear')); ?>" class="font-bold text-white"><?php the_field('sportswear'); ?></a>
                     <a href="<?php echo esc_url(home_url('/blog')); ?>" class="font-bold text-[#F9BF3B]">Blog</a>
-                    <a href="<?php echo esc_url(home_url('/basket')); ?>" class="font-bold text-[#F9BF3B]">Cart</a>
-
                     </div>
 
             </div>
             <div class="flex space-x-2">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/userIcon.png" alt="UserIcon" class="w-auto h-10">
+                <a href="<?php echo esc_url(home_url('/basket')); ?>" class="font-bold text-[#F9BF3B]">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/basketIcon.png" alt="BasketIcon" class="w-auto h-10">
+                </a>
                 <ul><?php pll_the_languages(); ?></ul>
             </div>
         </div>
