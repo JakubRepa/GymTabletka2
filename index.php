@@ -75,7 +75,7 @@ get_header();
             while ($loop->have_posts()) : $loop->the_post();
                 global $product;
                 ?>
-                <div class="text-center pb-24">
+                <div class="text-center">
                     <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center">
                         <a href="<?php the_permalink(); ?>" class="product-link">
                             <?php if (has_post_thumbnail()) : ?>
@@ -99,7 +99,7 @@ get_header();
         ?>
     </div>
 
-        <div class="bg-[#F0F2F5] py-24">
+        <div class="bg-[#F0F2F5] py-24 mt-24">
             <div class="container flex justify-between max-w-6xl mx-auto">
                 <div class="text-center w-full">
                     <h3 class="text-3xl font-bold pb-8">Don’t take our word for it</h3>
