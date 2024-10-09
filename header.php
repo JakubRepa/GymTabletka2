@@ -7,6 +7,14 @@
 </head>
 <body <?php body_class(); ?>>
 
+<?php
+$loop= new WP_Query(array(
+    'post_type' => 'header',
+    'posts_per_page' => 1
+));
+while($loop->have_posts()) : $loop->the_post();
+?>
+
     <div class="bg-[#232F3E] text-[#FFFFFF] py-4 fixedPosition">
         <div class="container flex items-center justify-between max-w-6xl mx-auto">
             <div class="text-4xl font-bold">
@@ -57,3 +65,7 @@
         ) );
     endif;
     ?>
+
+<?php endwhile; ?>
+<?php wp_reset_postdata(); ?>
+
