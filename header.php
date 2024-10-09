@@ -10,7 +10,7 @@
     <div class="bg-[#232F3E] text-[#FFFFFF] py-4 fixedPosition">
         <div class="container flex items-center justify-between max-w-6xl mx-auto">
             <div class="text-4xl font-bold">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LOGOOO</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">Ka</a>
             </div>
             <div class="flex flex-col">
                 <div class="relative -mx-8">
