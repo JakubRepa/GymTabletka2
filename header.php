@@ -38,7 +38,9 @@ while($loop->have_posts()) : $loop->the_post();
 
             </div>
             <div class="flex space-x-2">
+                <a href="<?php echo esc_url(home_url('/my-account')); ?>" class="font-bold text-[#F9BF3B]">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/userIcon.png" alt="UserIcon" class="w-auto h-10">
+                </a>
                 <a href="<?php echo esc_url(home_url('/basket')); ?>" class="font-bold text-[#F9BF3B]">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/basketIcon.png" alt="BasketIcon" class="w-auto h-10">
                 </a>
