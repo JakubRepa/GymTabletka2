@@ -30,9 +30,9 @@ while($loop->have_posts()) : $loop->the_post();
                     <input type="search" id="default-search" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded-lg ps-10 bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search..." required />
                 </div>
                 <div class="pt-4 space-x-6 uppercase">
-                    <a href="<?php echo esc_url(home_url('/sport-nutrition')); ?>" class="font-bold text-white"><?php the_field('sport_nutrition'); ?></a>
-                    <a href="<?php echo esc_url(home_url('/product-category/fitness-food/')); ?>" class="font-bold text-white"><?php the_field('healthy_foods'); ?></a>
-                    <a href="<?php echo esc_url(home_url('/sportswear')); ?>" class="font-bold text-white"><?php the_field('sportswear'); ?></a>
+                    <a href="<?php echo esc_url(home_url('/product-category/sport-nutrition/')); ?>" class="font-bold text-white"><?php the_field('sport_nutrition'); ?></a>
+                    <a href="<?php echo esc_url(home_url('/product-category/fitness-food/')); ?>" class="font-bold text-white"><?php the_field('fitness_food'); ?></a>
+                    <a href="<?php echo esc_url(home_url('/product-category/sportswear/')); ?>" class="font-bold text-white"><?php the_field('sportswear'); ?></a>
                     <a href="<?php echo esc_url(home_url('/blog')); ?>" class="font-bold text-[#F9BF3B]">Blog</a>
                     </div>
 
