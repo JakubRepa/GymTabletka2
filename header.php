@@ -31,7 +31,7 @@ while($loop->have_posts()) : $loop->the_post();
                 </div>
                 <div class="pt-4 space-x-6 uppercase">
                     <a href="<?php echo esc_url(home_url('/sport-nutrition')); ?>" class="font-bold text-white"><?php the_field('sport_nutrition'); ?></a>
-                    <a href="<?php echo esc_url(home_url('/healthy-foods')); ?>" class="font-bold text-white"><?php the_field('healthy_foods'); ?></a>
+                    <a href="<?php echo esc_url(home_url('/product-category/fitness-food/')); ?>" class="font-bold text-white"><?php the_field('healthy_foods'); ?></a>
                     <a href="<?php echo esc_url(home_url('/sportswear')); ?>" class="font-bold text-white"><?php the_field('sportswear'); ?></a>
                     <a href="<?php echo esc_url(home_url('/blog')); ?>" class="font-bold text-[#F9BF3B]">Blog</a>
                     </div>
