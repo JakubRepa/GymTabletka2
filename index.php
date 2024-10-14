@@ -58,31 +58,25 @@ get_header();
     <div>
 
     <div class="pt-24 pb-8 text-center">
-        <h3 class="text-3xl font-bold">Our top sellersSS</h3>
+        <h3 class="text-3xl font-bold">Our top sellers</h3>
     </div>
+    <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap">
+        <?php 
+        $args = array(
+            'post_type' => 'product',
+            'posts_per_page' => 4,
+            'orderby' => 'date',
+            'order' => 'DESC'
+        );
 
-   <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap" style="padding-bottom: 6.5rem;">
-    <?php 
-    $args = array(
-        'post_type' => 'product',
-        'posts_per_page' => 4,
-        'orderby' => 'date',
-        'order' => 'DESC'
-    );
+        $loop = new WP_Query($args);
 
-    $loop = new WP_Query($args);
-
-    if ($loop->have_posts()) : 
-        while ($loop->have_posts()) : $loop->the_post();
-            global $product;
-            
-            // Retrieve ACF custom fields for product size and flavour
-            $product_size = get_field('product_size');
-            $product_flavour = get_field('product_flavour');
-            ?>
-            
+        if ($loop->have_posts()) : 
+            while ($loop->have_posts()) : $loop->the_post();
+                global $product;
+                ?>
                 <div class="text-center">
-                    <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center" st>
+                    <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center">
                         <a href="<?php the_permalink(); ?>" class="product-link">
                             <?php if (has_post_thumbnail()) : ?>
                                 <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="w-auto">
@@ -91,51 +85,53 @@ get_header();
                             <?php endif; ?>
                         </a>
                     </div>
+                    <div class="pt-2">
+                        <p class="font-bold"><?php the_title(); ?></p>
+                        <span class="text-green-600"><?php echo $product->get_price_html(); ?></span>
+                    </div>
                 </div>
-                
-                <!-- Product Title and Price -->
-                <div class="pt-2">
-                    <p class="font-bold"><?php the_title(); ?></p>
-                    <span class="text-green-600"><?php echo $product->get_price_html(); ?></span>
+                <?php 
+            endwhile;
+            wp_reset_postdata();
+        else :
+            echo '<p>No products found</p>';
+        endif;
+        ?>
+    </div>
+
+        
+
+        <div class="bg-[#F0F2F5] flex justify-center py-4 mt-12">
+            <button class="bg-white rounded-lg px-12 py-2">View All</button>
+        </div>
+
+        <div>
+            <div class="container flex justify-between max-w-6xl mx-auto pt-24 pb-8">
+                <div class="max-w-[50%]">
+                    <h3 class="text-3xl font-bold">What makes our Whey Protein so special?</h3>
+                    <p>Short description of the most popular category, Short description of the most popular category, Short description of the most popular category.</p>
                 </div>
-                
-                <!-- Custom Fields: Product Size and Flavour -->
-                <div class="pt-1 text-sm text-gray-600">
-                    <?php if ($product_size) : ?>
-                        <p><strong>Size:</strong> <?php echo $product_size; ?></p>
-                    <?php endif; ?>
-                    
-                    <?php if ($product_flavour) : ?>
-                        <p><strong>Flavour:</strong> <?php echo $product_flavour; ?></p>
-                    <?php endif; ?>
+                <div class="flex items-center">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="h-40">
                 </div>
             </div>
-
-            <?php 
-        endwhile;
-        wp_reset_postdata();
-    else :
-        echo '<p>No products found</p>';
-    endif;
-    ?>
-</div>
-
+        </div>
 
         <div class="bg-[#F0F2F5] py-24">
             <div class="container flex justify-between max-w-6xl mx-auto">
                 <div class="text-center w-full">
-                    <h3 class="text-3xl font-bold pb-4">Don’t take our word for it</h3>
+                    <h3 class="text-3xl font-bold pb-8">Don’t take our word for it</h3>
                     <p>See what our customers have to say</p>
                 </div>
             </div>
-            <div class="container flex justify-between max-w-7xl space-x-4 mx-auto pt-12">
+            <div class="container flex justify-between max-w-6xl mx-auto pt-12">
                 <?php 
                 for ($i = 0; $i < 3; $i++) : ?>
                     <div class="w-full">
                         <div class="text-center pb-8">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="NoImage" class="rounded-full h-24 w-24 mx-auto">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="rounded-full h-24 w-24 mx-auto">
                         </div>
-                        <div class="text-center max-w-3xl">
+                        <div class="text-center">
                             <p>Short description of the most popular category, Short description of the most popular category, Short description of the most popular category.</p>
                         </div>
                         <div class="text-center pt-8">
