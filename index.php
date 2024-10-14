@@ -81,7 +81,7 @@ get_header();
             $product_flavour = get_field('product_flavour');
             ?>
             
-            <div class="text-center">
+            <div class="text-center flex lg:flex-row flex-col">
                 <div class="bg-[#F0F2F5] w-44 h-44 flex lg:flex-row flex-col items-center justify-center">
                     <a href="<?php the_permalink(); ?>" class="product-link">
                         <?php if (has_post_thumbnail()) : ?>
