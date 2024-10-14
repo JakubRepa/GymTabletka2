@@ -61,7 +61,7 @@ get_header();
         <h3 class="text-3xl font-bold">Our top sellers</h3>
     </div>
 
-    <div class="container flex flex-wrap justify-between max-w-6xl mx-auto space-x-4" style="padding-bottom: 6.5rem;">
+   <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap" style="padding-bottom: 6.5rem;">
     <?php 
     $args = array(
         'post_type' => 'product',
@@ -81,8 +81,8 @@ get_header();
             $product_flavour = get_field('product_flavour');
             ?>
             
-                <div class="text-center w-full sm:w-1/2 md:w-1/4">
-                    <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center mx-auto">
+                <div class="text-center">
+                    <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center" st>
                         <a href="<?php the_permalink(); ?>" class="product-link">
                             <?php if (has_post_thumbnail()) : ?>
                                 <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="w-auto">
@@ -119,7 +119,6 @@ get_header();
     endif;
     ?>
 </div>
-
 
 
         <div class="bg-[#F0F2F5] py-24">
