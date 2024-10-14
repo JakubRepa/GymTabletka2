@@ -82,8 +82,7 @@ get_header();
             ?>
             
             <div class="text-center">
-                <!-- Product Image -->
-                <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center">
+                <div class="bg-[#F0F2F5] w-44 h-44 flex lg:flex-row flex-col items-center justify-center">
                     <a href="<?php the_permalink(); ?>" class="product-link">
                         <?php if (has_post_thumbnail()) : ?>
                             <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="w-auto">
