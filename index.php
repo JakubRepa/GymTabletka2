@@ -58,7 +58,7 @@ get_header();
     <div>
 
     <div class="pt-24 pb-8 text-center">
-        <h3 class="text-3xl font-bold">Our top sellers</h3>
+        <h3 class="text-3xl font-bold">Our top sellersSS</h3>
     </div>
 
    <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap" style="padding-bottom: 6.5rem;">
