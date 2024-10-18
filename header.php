@@ -20,7 +20,7 @@ while($loop->have_posts()) : $loop->the_post();
             <div class="text-4xl font-bold">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LOGOOO</a>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col hidden lg:block">
                 <div class="relative -mx-8">
                     <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
                         <svg class="w-4 h-4 text-[#99A0A7]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -29,7 +29,7 @@ while($loop->have_posts()) : $loop->the_post();
                     </div>
                     <input type="search" id="default-search" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded-lg ps-10 bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search..." required />
                 </div>
-                <div class="pt-4 space-x-6 uppercase lg:block hidden">
+                <div class="pt-4 space-x-6 uppercase">
                     <a href="<?php echo esc_url(home_url('/product-category/sport-nutrition/')); ?>" class="font-bold text-white"><?php the_field('sport_nutrition'); ?></a>
                     <a href="<?php echo esc_url(home_url('/product-category/fitness-food/')); ?>" class="font-bold text-white"><?php the_field('fitness_food'); ?></a>
                     <a href="<?php echo esc_url(home_url('/product-category/sportswear/')); ?>" class="font-bold text-white"><?php the_field('sportswear'); ?></a>
