@@ -18,7 +18,7 @@ while($loop->have_posts()) : $loop->the_post();
     <div class="bg-[#232F3E] text-[#FFFFFF] py-4 fixedPosition">
         <div class="container flex items-center justify-between max-w-6xl mx-auto">
             <div class="text-4xl font-bold">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LOGOOO</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LO</a>
             </div>
             <div class="flex flex-col lg:block hidden">
                 <div class="relative -mx-8">
