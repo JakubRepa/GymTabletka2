@@ -20,7 +20,7 @@ while($loop->have_posts()) : $loop->the_post();
             <div class="text-4xl font-bold">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LOGOOO</a>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col lg-block hidden"> <!-- Skryto na středních a menších obrazovkách -->
                 <div class="relative -mx-8">
                     <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
                         <svg class="w-4 h-4 text-[#99A0A7]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -34,8 +34,7 @@ while($loop->have_posts()) : $loop->the_post();
                     <a href="<?php echo esc_url(home_url('/product-category/fitness-food/')); ?>" class="font-bold text-white"><?php the_field('fitness_food'); ?></a>
                     <a href="<?php echo esc_url(home_url('/product-category/sportswear/')); ?>" class="font-bold text-white"><?php the_field('sportswear'); ?></a>
                     <a href="<?php echo esc_url(home_url('/blog')); ?>" class="font-bold text-[#F9BF3B]">Blog</a>
-                    </div>
-
+                </div>
             </div>
             <div class="flex space-x-2">
                 <a href="<?php echo esc_url(home_url('/my-account')); ?>" class="font-bold text-[#F9BF3B]">
@@ -48,6 +47,7 @@ while($loop->have_posts()) : $loop->the_post();
             </div>
         </div>
     </div>
+
     <style>
         .fixedPosition {
             position: fixed;
