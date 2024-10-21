@@ -60,8 +60,8 @@ get_header();
     <div class="pt-24 pb-8 text-center">
         <h3 class="text-3xl font-bold">Our top sellers</h3>
     </div>
-    <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap" style="padding-bottom: 6.5rem;">
-    <?php 
+    <div class="container flex justify-between max-w-6xl mx-auto space-x-4 flex-nowrap">
+        <?php 
         $args = array(
             'post_type' => 'product',
             'posts_per_page' => 4,
@@ -99,21 +99,39 @@ get_header();
         ?>
     </div>
 
+        
+
+        <div class="bg-[#F0F2F5] flex justify-center py-4 mt-12">
+            <button class="bg-white rounded-lg px-12 py-2">View All</button>
+        </div>
+
+        <div>
+            <div class="container flex justify-between max-w-6xl mx-auto pt-24 pb-8">
+                <div class="max-w-[50%]">
+                    <h3 class="text-3xl font-bold">What makes our Whey Protein so special?</h3>
+                    <p>Short description of the most popular category, Short description of the most popular category, Short description of the most popular category.</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="h-40">
+                </div>
+            </div>
+        </div>
+
         <div class="bg-[#F0F2F5] py-24">
             <div class="container flex justify-between max-w-6xl mx-auto">
                 <div class="text-center w-full">
-                    <h3 class="text-3xl font-bold pb-4">Don’t take our word for it</h3>
+                    <h3 class="text-3xl font-bold pb-8">Don’t take our word for it</h3>
                     <p>See what our customers have to say</p>
                 </div>
             </div>
-            <div class="container flex justify-between max-w-7xl space-x-4 mx-auto pt-12">
+            <div class="container flex justify-between max-w-6xl mx-auto pt-12">
                 <?php 
                 for ($i = 0; $i < 3; $i++) : ?>
                     <div class="w-full">
                         <div class="text-center pb-8">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="NoImage" class="rounded-full h-24 w-24 mx-auto">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="rounded-full h-24 w-24 mx-auto">
                         </div>
-                        <div class="text-center max-w-3xl">
+                        <div class="text-center">
                             <p>Short description of the most popular category, Short description of the most popular category, Short description of the most popular category.</p>
                         </div>
                         <div class="text-center pt-8">

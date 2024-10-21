@@ -7,10 +7,18 @@
 </head>
 <body <?php body_class(); ?>>
 
+<?php
+$loop= new WP_Query(array(
+    'post_type' => 'header',
+    'posts_per_page' => 1
+));
+while($loop->have_posts()) : $loop->the_post();
+?>
+
     <div class="bg-[#232F3E] text-[#FFFFFF] py-4 fixedPosition">
         <div class="container flex items-center justify-between max-w-6xl mx-auto">
             <div class="text-4xl font-bold">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LOGOOO</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LO</a>
             </div>
             <div class="flex flex-col lg:block hidden">
                 <div class="relative -mx-8">
@@ -22,15 +30,16 @@
                     <input type="search" id="default-search" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded-lg ps-10 bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search..." required />
                 </div>
                 <div class="pt-4 space-x-6 uppercase">
-                    <a href="<?php echo esc_url(home_url('/sport-nutrition')); ?>" class="font-bold text-white"><?php the_field('sport_nutrition'); ?></a>
-                    <a href="<?php echo esc_url(home_url('/healthy-foods')); ?>" class="font-bold text-white"><?php the_field('healthy_foods'); ?></a>
-                    <a href="<?php echo esc_url(home_url('/sportswear')); ?>" class="font-bold text-white"><?php the_field('sportswear'); ?></a>
+                    <a href="<?php echo esc_url(home_url('/product-category/sport-nutrition/')); ?>" class="font-bold text-white"><?php the_field('sport_nutrition'); ?></a>
+                    <a href="<?php echo esc_url(home_url('/product-category/fitness-food/')); ?>" class="font-bold text-white"><?php the_field('fitness_food'); ?></a>
+                    <a href="<?php echo esc_url(home_url('/product-category/sportswear/')); ?>" class="font-bold text-white"><?php the_field('sportswear'); ?></a>
                     <a href="<?php echo esc_url(home_url('/blog')); ?>" class="font-bold text-[#F9BF3B]">Blog</a>
-                    </div>
-
+                </div>
             </div>
             <div class="flex space-x-2">
+                <a href="<?php echo esc_url(home_url('/my-account')); ?>" class="font-bold text-[#F9BF3B]">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/userIcon.png" alt="UserIcon" class="w-auto h-10">
+                </a>
                 <a href="<?php echo esc_url(home_url('/basket')); ?>" class="font-bold text-[#F9BF3B]">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/basketIcon.png" alt="BasketIcon" class="w-auto h-10">
                 </a>
@@ -38,6 +47,7 @@
             </div>
         </div>
     </div>
+
     <style>
         .fixedPosition {
             position: fixed;
@@ -57,3 +67,7 @@
         ) );
     endif;
     ?>
+
+<?php endwhile; ?>
+<?php wp_reset_postdata(); ?>
+
