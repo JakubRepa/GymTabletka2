@@ -12,7 +12,7 @@
             <div class="text-4xl font-bold">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">LOGOOO</a>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col lg:block hidden">
                 <div class="relative -mx-8">
                     <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
                         <svg class="w-4 h-4 text-[#99A0A7]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
