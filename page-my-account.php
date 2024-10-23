@@ -4,14 +4,12 @@
 
 <?php get_footer(); ?>
 <style>
-    body{
-        margin-top: 75vh;
-    }
-
     .woocommerce{
-        width:50%;
         display:flex;
         justify-content:center;
         font-family: 'Poppins', sans-serif;
+        padding-top:80px;
+        padding-bottom:80px
+        
     }
 </style>
