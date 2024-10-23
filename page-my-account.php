@@ -5,7 +5,7 @@
 <?php get_footer(); ?>
 <style>
     body{
-        padding-bottom:90px;
+        margin-bottom:90px;
     }
 
     .woocommerce{
@@ -16,6 +16,6 @@
     }
 
     form{
-        width:200px;
+        width:500px;
     }
 </style>
