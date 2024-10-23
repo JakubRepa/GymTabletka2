@@ -5,6 +5,6 @@
 <?php get_footer(); ?>
 <style>
     body{
-        margin-top: 75vh !important;
+        margin-top: 75vh;
     }
 </style>
