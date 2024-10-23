@@ -99,11 +99,9 @@ get_header();
         ?>
     </div>
 
-        
+   
 
-        <div class="bg-[#F0F2F5] flex justify-center py-4 mt-12">
-            <button class="bg-white rounded-lg px-12 py-2">View All</button>
-        </div>
+        
 
         <div>
             <div class="container flex justify-between max-w-6xl mx-auto pt-24 pb-8">
@@ -120,7 +118,7 @@ get_header();
         <div class="bg-[#F0F2F5] py-24">
             <div class="container flex justify-between max-w-6xl mx-auto">
                 <div class="text-center w-full">
-                    <h3 class="text-3xl font-bold pb-8">Don’t take our word for it</h3>
+                    <h3 class="text-3xl font-bold pb-4">Don’t take our word for it</h3>
                     <p>See what our customers have to say</p>
                 </div>
             </div>
