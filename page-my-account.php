@@ -4,7 +4,8 @@
 
 <?php get_footer(); ?>
 <style>
-    body{
-        margin-top:100vh;
+    form{
+        padding: 20vh 0 20vh 0;
+        width: 75%;
     }
 </style>
