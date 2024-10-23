@@ -7,4 +7,8 @@
     body{
         margin-top: 75vh;
     }
+
+    form{
+        width:50%;
+    }
 </style>
