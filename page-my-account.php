@@ -8,7 +8,7 @@
         display:flex;
         justify-content:center;
         font-family: 'Poppins', sans-serif;
-        padding-top:200px
+        margin-top:200px
         padding-bottom:90px
     }
 
