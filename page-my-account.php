@@ -4,7 +4,7 @@
 
 <?php get_footer(); ?>
 <style>
-    html{
-        padding-bottom: 75vh !important;
+    body{
+        margin-top: 75vh !important;
     }
 </style>
