@@ -81,7 +81,7 @@ get_header();
                             <?php if (has_post_thumbnail()) : ?>
                                 <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="w-auto">
                             <?php else: ?>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/placeholder.png" alt="No Image" class="h-24">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/placeholder.png" alt="No Image" class="h-24 bg-white">
                             <?php endif; ?>
                         </a>
                     </div>
