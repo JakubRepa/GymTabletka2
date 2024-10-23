@@ -79,9 +79,9 @@ get_header();
                     <div class="bg-[#F0F2F5] w-44 h-44 flex items-center justify-center">
                         <a href="<?php the_permalink(); ?>" class="product-link">
                             <?php if (has_post_thumbnail()) : ?>
-                                <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="w-auto">
+                                <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>" class="w-auto ">
                             <?php else: ?>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/placeholder.png" alt="No Image" class="h-24 bg-white">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/placeholder.png" alt="No Image" class="h-24">
                             <?php endif; ?>
                         </a>
                     </div>
@@ -104,13 +104,13 @@ get_header();
         
 
         <div>
-            <div class="container flex justify-between max-w-6xl mx-auto pt-24 pb-8">
+            <div class="container flex justify-between max-w-5xl mx-auto pt-24 pb-8">
                 <div class="max-w-[50%]">
                     <h3 class="text-3xl font-bold">What makes our Whey Protein so special?</h3>
-                    <p>Short description of the most popular category, Short description of the most popular category, Short description of the most popular category.</p>
+                    <p>Our Whey Protein delivers high-quality nutrition with 24 grams of protein per serving, ideal for muscle growth and recovery. Made from 100% premium whey, it’s fast-absorbing to support post-workout needs. With no artificial flavors or additives, it's a clean, low-sugar option for lean muscle building. Added digestive enzymes ensure it's easy on the stomach and improves absorption. Perfect for athletes or anyone looking to boost their protein intake effectively.</p>
                 </div>
                 <div class="flex items-center">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="h-40">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/proteinPowderSpecial.jpg" alt="SpecialProteinPowder" class="h-40">
                 </div>
             </div>
         </div>
