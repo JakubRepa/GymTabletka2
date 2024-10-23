@@ -12,7 +12,7 @@
         width:50%;
         display:flex;
         flex-direction:column;
-        justify-content:center;
+        align-items: center;
         font-family: 'Poppins', sans-serif;
     }
 </style>
