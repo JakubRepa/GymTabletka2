@@ -5,7 +5,6 @@
 <?php get_footer(); ?>
 <style>
     form{
-        padding: 20vh 0 20vh 0;
-        width: 75%;
+        padding: 20px 0 20px 0;
     }
 </style>
