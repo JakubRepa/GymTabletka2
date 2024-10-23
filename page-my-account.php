@@ -10,13 +10,13 @@
         align-items:center;
         justify-content:center;
         font-family: 'Poppins', sans-serif;
-        margin-top: 190px; 
-        margin-bottom: 100px; 
+        margin-top: 200px; 
+        margin-bottom: 110px; 
     }
 
     form{
         width:500px;
-        margin-top: 190px; 
-        margin-bottom: 100px; 
+        margin-top: 200px; 
+        margin-bottom: 110px; 
     }
 </style>
