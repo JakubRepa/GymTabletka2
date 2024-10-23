@@ -6,6 +6,8 @@
 <style>
     .woocommerce{
         display:flex;
+        flex-direction:column
+        align-items:center;
         justify-content:center;
         font-family: 'Poppins', sans-serif;
         margin-top: 178px; 
