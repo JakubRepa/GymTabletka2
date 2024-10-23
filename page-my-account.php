@@ -8,7 +8,6 @@
         display:flex;
         justify-content:center;
         font-family: 'Poppins', sans-serif;¨
-        height:100vh;
     }
 
     form{

@@ -60,7 +60,7 @@ while($loop->have_posts()) : $loop->the_post();
             </div>
         </div>
         <div class="text-[#bdc1c5]">
-            <div class="pb-4 text-4xl font-bold text-white">LOGO</div>
+            <div class="pb-4 text-4xl font-bold text-white">LOGOO</div>
             <p><?php the_field('company_name'); ?></p>
             <p><?php the_field('company_address'); ?></p>
             <p><?php the_field('company_city'); ?></p>
