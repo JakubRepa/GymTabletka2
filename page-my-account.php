@@ -4,7 +4,7 @@
 
 <?php get_footer(); ?>
 <style>
-    boby{
+    body{
         margin-top:100vh;
     }
 </style>
