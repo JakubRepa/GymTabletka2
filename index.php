@@ -106,11 +106,11 @@ get_header();
         <div>
             <div class="container flex justify-between max-w-6xl mx-auto pt-24 pb-8">
                 <div class="max-w-[50%]">
-                    <h3 class="text-3xl font-bold">What makes our Whey Protein so special?</h3>
+                    <h3 class="text-5xl font-bold">What makes our Whey Protein so special?</h3>
                     <p>Our Whey Protein delivers high-quality nutrition with 24 grams of protein per serving, ideal for muscle growth and recovery. Made from 100% premium whey, it’s fast-absorbing to support post-workout needs. With no artificial flavors or additives, it's a clean, low-sugar option for lean muscle building. Added digestive enzymes ensure it's easy on the stomach and improves absorption. Perfect for athletes or anyone looking to boost their protein intake effectively.</p>
                 </div>
                 <div class="flex items-center">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/proteinPowderSpecial.jpg" alt="SpecialProteinPowder" class="w-[10rem] h-auto">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/proteinPowderSpecial.jpg" alt="SpecialProteinPowder" class="w-[9rem] h-auto">
                 </div>
             </div>
         </div>
