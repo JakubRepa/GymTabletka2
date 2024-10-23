@@ -8,11 +8,11 @@
         margin-top: 75vh;
     }
 
-    form{
+    .woocommerce{
         width:50%;
         display:flex;
         flex-direction:column;
-        align-items: center;
+        justify-content:center;
         font-family: 'Poppins', sans-serif;
     }
 </style>
