@@ -4,7 +4,11 @@
 
 <?php get_footer(); ?>
 <style>
-    form{
-        padding: 20px 0 20px 0;
+    footer{
+        padding-top:50px;
+    }
+
+    header{
+        padding-bottom:50px;
     }
 </style>
