@@ -10,5 +10,8 @@
 
     form{
         width:50%;
+        display:flex;
+        justify-content:center;
+        font-family: 'Poppins', sans-serif;
     }
 </style>
