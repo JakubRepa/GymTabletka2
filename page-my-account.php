@@ -7,11 +7,11 @@
     .woocommerce{
         display:flex;
         justify-content:center;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', sans-serif;¨
+        height:100vh;
     }
 
     form{
         width:500px;
-        padding: 200px;
     }
 </style>
