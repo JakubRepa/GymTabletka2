@@ -5,7 +5,7 @@
 <?php get_footer(); ?>
 <style>
     body{
-        margin-bottom:90px;
+        margin-bottom:50vh;
     }
 
     .woocommerce{
