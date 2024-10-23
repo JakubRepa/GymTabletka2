@@ -4,10 +4,9 @@
 
 <?php get_footer(); ?>
 <style>
-    header{
-        padding-bottom:200px;
+    body{
+        height:75vh;
     }
-
     .woocommerce{
         display:flex;
         justify-content:center;
