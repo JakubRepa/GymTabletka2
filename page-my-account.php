@@ -7,10 +7,14 @@
     .woocommerce{
         display:flex;
         justify-content:center;
-        font-family: 'Poppins', sans-serif;¨
+        font-family: 'Poppins', sans-serif;
+        margin-top: 90px; 
+        margin-bottom: 90px; 
     }
 
     form{
         width:500px;
+        margin-top: 90px; 
+        margin-bottom: 90px; 
     }
 </style>
