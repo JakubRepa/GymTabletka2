@@ -13,10 +13,15 @@
 
     .woocommerce-account .woocommerce-MyAccount-navigation {
         width: unset !important;
+        margin-bottom: 1rem;
     }
 
     .woocommerce-MyAccount-navigation ul {
         display: flex;
         gap: 20px;
+    }
+
+    .woocommerce-account .woocommerce-MyAccount-content {
+        width: 100%;
     }
 </style>
