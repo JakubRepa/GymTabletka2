@@ -19,9 +19,11 @@
         display:flex;
     }
 
-    .ab-item{
-        visibility:hidden;
+    .woocommerce-account .woocommerce-MyAccount-navigation {
+    /* width: 30%; */
     }
+
+    
 
     form{
         width:500px;
