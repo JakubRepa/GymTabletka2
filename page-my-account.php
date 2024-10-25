@@ -25,10 +25,9 @@
         width: full;
     }
 
-    a{
+    li{
         display:flex;
         width:full;
     }
-
 
 </style>
