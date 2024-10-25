@@ -1,21 +1,11 @@
-<?php get_header(); ?>
+<? get_header(); ?>
+<div class="mt-28 h-full min-h-[calc(100vh-8rem)] container mx-auto max-w-6xl py-8">
+    <? echo do_shortcode('[woocommerce_my_account]'); ?>
+</div>
+<? get_footer(); ?>
 
-<?php echo do_shortcode('[woocommerce_my_account]'); ?>
-
-<?php get_footer(); ?>
 <style>
-    .woocommerce {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Poppins', sans-serif;
-        margin-top: 200px;
-        margin-bottom: 110px;
-    }
-
     .woocommerce-MyAccount-navigation {
-        width: full;
         display: flex;
     }
 
@@ -23,23 +13,8 @@
         width: unset !important;
     }
 
-    nav {
-        width: full;
-    }
-
-    form {
-        width: 500px;
-        margin-top: 200px;
-        margin-bottom: 110px;
-    }
-
-    ul {
+    .woocommerce-MyAccount-navigation ul {
         display: flex;
         gap: 20px;
-    }
-
-    li {
-        display: flex;
-        width: full;
     }
 </style>
