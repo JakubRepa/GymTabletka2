@@ -5,7 +5,7 @@
 <? get_footer(); ?>
 
 <style>
-    .woocomerce {
+    .woocommerce {
         display: flex;
         flex-direction: column;
         align-items: center;
