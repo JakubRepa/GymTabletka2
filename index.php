@@ -122,22 +122,41 @@ get_header();
                     <p>See what our customers have to say</p>
                 </div>
             </div>
-            <div class="container flex justify-between max-w-6xl mx-auto pt-12">
-                <?php 
-                for ($i = 0; $i < 3; $i++) : ?>
+                <div class="container flex justify-between max-w-6xl mx-auto pt-12">
                     <div class="w-full">
                         <div class="text-center pb-8">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="rounded-full h-24 w-24 mx-auto">
                         </div>
                         <div class="text-center">
-                            <p>Short description of the most popular category, Short description of the most popular category, Short description of the most popular category.</p>
+                            <p>"The products are top-notch! I’ve seen real results with the protein powders, and they taste great too. I’m a regular customer now!"</p>
                         </div>
                         <div class="text-center pt-8">
-                            <p class="font-bold">John Doe</p>
+                            <p class="font-bold">John S.</p>
                         </div>
                     </div>
-                <?php endfor; ?>
-            </div>
+                    <div class="w-full">
+                        <div class="text-center pb-8">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="rounded-full h-24 w-24 mx-auto">
+                        </div>
+                        <div class="text-center">
+                            <p>"I love the variety and quality here. The fat burner has been a game-changer for my fitness journey, and customer service is always so helpful!"</p>
+                        </div>
+                        <div class="text-center pt-8">
+                            <p class="font-bold">Emma R.</p>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="text-center pb-8">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/moneyBack.png" alt="hihi" class="rounded-full h-24 w-24 mx-auto">
+                        </div>
+                        <div class="text-center">
+                            <p>"Finally found a store that offers everything I need in one place. The delivery is quick, and the products exceed expectations every time!"</p>
+                        </div>
+                        <div class="text-center pt-8">
+                            <p class="font-bold">Lucas M.</p>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="py-24">
             <div class="flex flex-col items-center justify-center w-full">
