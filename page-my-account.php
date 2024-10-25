@@ -14,6 +14,10 @@
         margin-bottom: 110px; 
     }
 
+    img{
+        height:36px;
+    }
+
     form{
         width:500px;
         margin-top: 200px; 
