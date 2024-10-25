@@ -10,7 +10,9 @@
             if ($banner_image) : ?>
                 <img src="<? echo esc_url($banner_image['url']); ?>" alt="<?php echo esc_attr($banner_image['alt']); ?>" class="w-full h-[75vh]">
             <?php else : ?>
-                <img src="<? echo esc_url($banner_image['url']); ?>" alt="Default Banner" class="w-full h-[75vh]">
+                <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('large', array('class' => 'w-auto h-auto max-w-full max-h-full')); ?>
+                <?php endif; ?>
             <?php endif; ?>
         </div>
 
