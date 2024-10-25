@@ -4,4 +4,8 @@
 
 <?php get_footer(); ?>
 
-<h1>test pičo</h1>
+<style>
+    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+        width: unset !important;
+    }
+</style>
