@@ -4,7 +4,7 @@
 
 <?php get_footer(); ?>
 <style>
-    .woocommerce{
+    .woocommerce {
         display:flex;
         flex-direction:column;
         align-items:center;
@@ -14,27 +14,31 @@
         margin-bottom: 110px;         
     }
 
-    .woocommerce-MyAccount-navigation{
+    .woocommerce-MyAccount-navigation {
         width:full;
         display:flex;
     }
 
-    nav{
+    .woocommerce-account .woocommerce-MyAccount-navigation {
+        width: 100% !important;
+    }
+
+    nav {
         width:full;
     }
 
-    form{
+    form {
         width:500px;
         margin-top: 200px; 
         margin-bottom: 110px; 
     }
 
-    ul{
+    ul {
         display:flex;
         gap:20px;
     }
 
-    li{
+    li {
         display:flex;
         width:full;
     }
