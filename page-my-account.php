@@ -5,8 +5,10 @@
 <? get_footer(); ?>
 
 <style>
-    .woocommerce-MyAccount-navigation {
+    .woocomerce {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .woocommerce-account .woocommerce-MyAccount-navigation {
