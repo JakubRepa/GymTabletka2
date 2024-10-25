@@ -15,7 +15,6 @@ add_action('after_setup_theme', 'mytheme_setup');
 
 function nase_enqueue_styles() {
     wp_enqueue_style( 'theme-css', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'tailwind-css', get_template_directory_uri() . '/tailwind-output.css', array(), '1.0', 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'nase_enqueue_styles' );
 

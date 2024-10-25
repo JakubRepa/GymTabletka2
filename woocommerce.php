@@ -3,4 +3,3 @@
     <? woocommerce_content() ?>
     </div>
 <? get_footer(); ?>
-
