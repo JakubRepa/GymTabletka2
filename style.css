@@ -11,16 +11,6 @@ Text Domain: gym-tabletka
 Tags:
 */
 
-/* Import Tailwind CSS parts */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-/* Add your custom styles below */
-
 /* Example custom style */
 html{
     margin-top: 0px !important;
