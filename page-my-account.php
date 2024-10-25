@@ -19,6 +19,10 @@
         display:flex;
     }
 
+    .ab-item{
+        visibility:hidden;
+    }
+
     form{
         width:500px;
         margin-top: 200px; 
@@ -27,7 +31,7 @@
 
     ul{
         display:flex;
-        width: full;
+        gap:20px;
     }
 
     li{
