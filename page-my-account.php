@@ -19,12 +19,9 @@
         display:flex;
     }
 
-    .woocommerce-account .woocommerce-MyAccount-navigation {
-        float:left;
-        width: full;
+    nav{
+        width:full;
     }
-
-    
 
     form{
         width:500px;
