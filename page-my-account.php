@@ -22,6 +22,11 @@
 
     ul{
         display:flex;
+        
+    }
+
+    li{
+        display:flex
     }
 
 
