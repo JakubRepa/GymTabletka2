@@ -1,6 +1,6 @@
-<?php get_header(); ?>
-
-    <?php woocommerce_content() ?>
-
-<?php get_footer(); ?>
+<? get_header(); ?>
+    <div class="mt-12">
+    <? woocommerce_content() ?>
+    </div>
+<? get_footer(); ?>
 
