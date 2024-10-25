@@ -20,7 +20,7 @@
     }
 
     .woocommerce-account .woocommerce-MyAccount-navigation {
-        width: 100% !important;
+        width: unset !important;
     }
 
     nav {
