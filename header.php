@@ -15,7 +15,7 @@ $loop= new WP_Query(array(
 while($loop->have_posts()) : $loop->the_post();
 ?>
 
-    <div class="bg-[#232F3E] text-[#FFFFFF] py-4 fixedPosition">
+    <div class="bg-[#232F3E] text-[#FFFFFF] py-4 navbar">
         <div class="container flex items-center justify-between max-w-6xl mx-auto">
             <div class="text-4xl font-bold">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">GymTabletka</a>
@@ -49,14 +49,15 @@ while($loop->have_posts()) : $loop->the_post();
     </div>
 
     <style>
-        .fixedPosition {
-            position: fixed;
+        .navbar {
+            position: relative;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 1000; /* Dostačující hodnota, aby byl navbar nad carousel */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lehce zvýrazní hranici */
         }
+
     </style>
 
     <?php
