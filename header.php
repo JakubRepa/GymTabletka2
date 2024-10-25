@@ -50,10 +50,11 @@ while($loop->have_posts()) : $loop->the_post();
 
     <style>
         .navbar {
-            position: relative;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
+            height: 112px;
             z-index: 1000; /* Dostačující hodnota, aby byl navbar nad carousel */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lehce zvýrazní hranici */
         }
