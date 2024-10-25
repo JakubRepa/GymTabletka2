@@ -1,9 +1,4 @@
-<?php
-/*
-Template Name: Blog Post
-*/
-
-get_header(); ?>
+<? get_header(); ?>
 
 <main>
     <div class="container max-w-6xl mx-auto">
@@ -13,9 +8,9 @@ get_header(); ?>
             // Fetch custom banner image from ACF
             $banner_image = get_field('banner_image');
             if ($banner_image) : ?>
-                <img src="<?php echo esc_url($banner_image['url']); ?>" alt="<?php echo esc_attr($banner_image['alt']); ?>" class="w-full h-[75vh]">
+                <img src="<? echo esc_url($banner_image['url']); ?>" alt="<?php echo esc_attr($banner_image['alt']); ?>" class="w-full h-[75vh]">
             <?php else : ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/default-banner.jpg" alt="Default Banner" class="w-full h-[75vh]">
+                <img src="<? echo esc_url($banner_image['url']); ?>" alt="Default Banner" class="w-full h-[75vh]">
             <?php endif; ?>
         </div>
 
@@ -63,6 +58,6 @@ get_header(); ?>
             <p class="font-bold"><?php echo get_the_date(); ?></p>
         </div>
     </div>
-
-    <?php get_footer(); ?>
 </main>
+
+<? get_footer(); ?>
