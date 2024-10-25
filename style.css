@@ -66,10 +66,11 @@ a:hover {
 .page-title {
     font-size: 4rem;
     font-weight: 500;
+    line-height: 1;
 }
 
 .woocommerce-result-count {
-    margin: 1rem 0 3rem 0;
+    margin: 1.5rem 0 3rem 0 !important;
 }
 
 .woocommerce ul.products li.product,
