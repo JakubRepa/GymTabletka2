@@ -22,11 +22,12 @@
 
     ul{
         display:flex;
-        
+        width: full;
     }
 
-    li{
-        display:flex
+    a{
+        display:flex;
+        width:full;
     }
 
 
