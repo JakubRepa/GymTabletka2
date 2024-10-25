@@ -11,11 +11,12 @@
         justify-content:center;
         font-family: 'Poppins', sans-serif;
         margin-top: 200px; 
-        margin-bottom: 110px; 
+        margin-bottom: 110px;         
     }
 
-    img{
-        height:36px;
+    .woocommerce-MyAccount-navigation{
+        width:full;
+        display:flex;
     }
 
     form{
