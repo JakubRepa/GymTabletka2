@@ -9,11 +9,11 @@ $images = [
 ];
 
 $texts = [
-    'Vítek',
-    'Černoch',
-    'Brčko',
-    'Nohy',
-    'Předávkování se'
+    'Healthy Recipes',
+    'Gymwear',
+    'Superfoods',
+    'Suplements',
+    'Vitamins'
 ];
 ?>
 
