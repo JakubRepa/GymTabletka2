@@ -82,3 +82,96 @@ a:hover {
 .woocommerce ul.products li.product .onsale {
     margin: unset;
 }
+
+/* Container for comments section */
+.comments-area {
+    border-top: solid 1px lightgray;
+    padding-top: 16px;
+    margin-top: 32px;
+}
+
+/* Comments Title */
+.comments-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+/* Individual comment styling */
+.comment-list .comment {
+    padding: 16px;
+    border: solid 3px lightgray;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-meta {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* Comment Text */
+.comment-content {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 8px;
+}
+
+/* Reply link styling */
+.comment-reply-link {
+    color: #1d6ec1;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.comment-reply-link:hover {
+    background-color: #e0e0e0;
+}
+
+/* Comment form styling */
+.comment-form label {
+    font-weight: bold;
+    margin-top: 8px;
+    display: block;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+    border: solid 3px lightgray;
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Submit button styling */
+.comment-form .submit {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1d6ec1;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 12px;
+}
+
+.comment-form .submit:hover {
+    background-color: #155a99;
+}
