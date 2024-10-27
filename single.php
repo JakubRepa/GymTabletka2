@@ -1,18 +1,6 @@
 <? get_header(); ?>
 <div class="mt-28 h-full min-h-[calc(100vh-8rem)] container mx-auto max-w-6xl py-8">
-    <!-- Custom Banner Image -->
-    <div class="py-8">
-        <?php
-        // Fetch custom banner image from ACF
-        $banner_image = get_field('banner_image');
-        if ($banner_image) : ?>
-            <img src="<? echo esc_url($banner_image['url']); ?>" alt="<?php echo esc_attr($banner_image['alt']); ?>" class="w-full h-[75vh]">
-        <?php else : ?>
-            <?php if (has_post_thumbnail()) : ?>
-                <?php the_post_thumbnail('large', array('class' => 'w-auto h-auto max-w-full max-h-full')); ?>
-            <?php endif; ?>
-        <?php endif; ?>
-    </div>
+    
 
     <!-- Custom Category Tags -->
     <div class="flex text-[#007db5] uppercase">
