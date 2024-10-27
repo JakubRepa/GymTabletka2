@@ -107,17 +107,17 @@ a:hover {
 }
 
 /* Labels for comment fields */
-#commentform label {
+#comment label {
     font-weight: bold;
     display: block;
     margin-top: 8px;
 }
 
 /* Input fields and text area styling */
-#commentform input[type="text"],
-#commentform input[type="email"],
-#commentform input[type="url"],
-#commentform textarea {
+#comment input[type="text"],
+#comment input[type="email"],
+#comment input[type="url"],
+#comment textarea {
     border: solid 3px lightgray;
     border-radius: 8px;
     width: 100%;
@@ -127,7 +127,7 @@ a:hover {
 }
 
 /* Comment submit button styling */
-#commentform #submit {
+#comment #submit {
     color: white;
     padding: 10px 20px;
     border: none;
@@ -142,7 +142,7 @@ a:hover {
 
 /* Additional elements and notes styling */
 .comment-notes,
-.comment-form-cookies-consent,
+.comment--cookies-consent,
 .form-allowed-tags {
     font-size: 0.875rem;
     color: gray;
