@@ -57,7 +57,7 @@ a:hover {
 .wpcf7 form input[name="your-email"],
 .wpcf7 form input[name="your-subject"],
 .wpcf7 form textarea[name="your-message"] {
-    border: solid 2px lightgray;
+    border: solid 3px lightgray;
     border-radius: 8px;
     width: 100%;
     font-weight: normal;
