@@ -24,7 +24,7 @@ $texts = [
                 <img src="<?php echo esc_url($image); ?>" alt="Carousel image" class="object-cover w-full h-full" />
                 <div class="absolute inset-x-0 flex justify-center">
                     <div class="container max-w-6xl">
-                        <span class="text-5xl font-bold text-black"><?php echo esc_html($texts[$index]); ?></span>
+                        <span class="text-5xl font-bold text-white"><?php echo esc_html($texts[$index]); ?></span>
                     </div>
                 </div>
             </div>
