@@ -30,11 +30,7 @@ get_header(); ?>
 
         <!-- Zobrazení příspěvků -->
         <div class="container max-w-6xl mx-auto">
-            <h1 class="pt-12 text-6xl font-bold text-black">All blog posts</h1>
-            <p class="pt-8">
-                <!-- Text pro všechny příspěvky -->
-                Všechny příspěvky k dané kategorii.
-            </p>
+            <h1 class="pt-12 text-6xl font-bold text-black"><?php the_field('heading'); ?></h1>
         </div>
 
         <div class="container max-w-6xl pt-4 mx-auto">
