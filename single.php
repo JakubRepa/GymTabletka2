@@ -45,4 +45,12 @@
         <p class="font-bold"><?php echo get_the_date(); ?></p>
     </div>
 </div>
+
+// load comments 
+<?php if (comments_open() || get_comments_number()): ?>
+    <div class="container mx-auto max-w-6xl py-8">
+        <?php comments_template(); ?>
+    </div>
+<?php endif; ?>
+
 <? get_footer(); ?>
