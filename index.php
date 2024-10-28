@@ -99,10 +99,6 @@ get_header();
         ?>
     </div>
 
-   
-
-        
-
         <div>
             <div class="container flex justify-between max-w-6xl mx-auto pt-24 pb-8">
                 <div class="max-w-[50%]">

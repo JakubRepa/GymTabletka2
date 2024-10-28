@@ -19,7 +19,8 @@ while($loop->have_posts()) : $loop->the_post();
     <div class="bg-[#232F3E] text-[#FFFFFF] py-4 navbar">
         <div class="container flex items-center justify-between max-w-6xl mx-auto">
             <div class="text-4xl font-bold">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="font-bold text-white">GymTabletka</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="text-white">
+            <span class="font-thin">Gym</span><span class="font-bold">Tabletka</span></a>
             </div>
             <div class="flex flex-col">
                 <div class="relative -mx-8">
