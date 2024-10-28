@@ -60,7 +60,8 @@ while($loop->have_posts()) : $loop->the_post();
             </div>
         </div>
         <div class="text-[#bdc1c5]">
-            <div class="pb-4 text-4xl font-bold text-white">GymTabletka</div>
+            <div class="pb-4 text-4xl text-white"><a href="<?php echo esc_url(home_url('/')); ?>" class="text-white italic">
+            <span class="font-thin">Gym</span><span class="font-bold">Tabletka</span></a></div>
             <p><?php the_field('company_name'); ?></p>
             <p><?php the_field('company_address'); ?></p>
             <p><?php the_field('company_city'); ?></p>
